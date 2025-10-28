@@ -1,0 +1,154 @@
+/* الخط العام */
+body {
+  margin: 0;
+  font-family: 'Tajawal', sans-serif;
+  background-color: #111;
+  color: #fff;
+  direction: rtl;
+}
+
+/* الشريط العلوي */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #000;
+  border-bottom: 3px solid #d32f2f;
+}
+
+.navbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .brand img {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar .brand h1 {
+  font-size: 22px;
+  color: #fff;
+  margin: 0;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #d32f2f;
+}
+
+/* زر اللغة */
+.lang-btn {
+  background-color: #d32f2f;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.lang-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* قسم الغلاف */
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url('assets/A_website_homepage_screenshot_for_"Jabal_Technolog.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-logo {
+  width: 250px;
+  filter: drop-shadow(0 0 20px #d32f2f);
+}
+
+/* القسم التعريفي */
+.intro {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+}
+
+.intro h2 {
+  color: #d32f2f;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  color: #ddd;
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero-buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.btn.primary {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #b71c1c;
+}
+
+.btn.secondary {
+  border: 2px solid #d32f2f;
+  color: #d32f2f;
+}
+
+.btn.secondary:hover {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+/* الفوتر */
+.footer {
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 3px solid #d32f2f;
+  color: #ccc;
+  font-size: 14px;
+}
